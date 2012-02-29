@@ -4,18 +4,10 @@
 package org.aspectj.tools.ajde.netbeans;
 
 import java.io.File;
-
 import java.io.FileFilter;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-
+import java.util.*;
 import java.util.logging.Logger;
 import org.aspectj.ajde.Ajde;
 import org.aspectj.ajde.OutputLocationManager;
@@ -23,20 +15,13 @@ import org.aspectj.ajde.ProjectPropertiesAdapter;
 import org.aspectj.ajde.ui.UserPreferencesAdapter;
 import org.netbeans.api.java.classpath.ClassPath;
 import org.netbeans.api.java.project.JavaProjectConstants;
-//import org.netbeans.api.java.queries.SourceForBinaryQuery;
-import org.netbeans.api.project.Project;
-import org.netbeans.api.project.ProjectInformation;
-import org.netbeans.api.project.ProjectUtils;
-import org.netbeans.api.project.SourceGroup;
-import org.netbeans.api.project.Sources;
+import org.netbeans.api.java.queries.BinaryForSourceQuery;
+import org.netbeans.api.java.queries.UnitTestForSourceQuery;
+import org.netbeans.api.project.*;
 import org.netbeans.api.project.ui.OpenProjects;
 import org.openide.filesystems.FileObject;
-import org.netbeans.api.java.queries.BinaryForSourceQuery;
-//import org.openide.filesystems.FileStateInvalidException;
-import org.netbeans.api.java.queries.UnitTestForSourceQuery;
 import org.openide.filesystems.FileStateInvalidException;
 import org.openide.filesystems.FileUtil;
-//import org.aspectj.util.FileUtil;
 import org.openide.util.Exceptions;
 
 /** TODO: handle code duplication */
