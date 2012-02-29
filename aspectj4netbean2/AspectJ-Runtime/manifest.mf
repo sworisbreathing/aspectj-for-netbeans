@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ramos.aspectjruntime
+OpenIDE-Module-Layer: ramos/aspectjruntime/layer.xml
+OpenIDE-Module-Localizing-Bundle: ramos/aspectjruntime/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.5.3
+

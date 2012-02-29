@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="BuildAction.java">
+        <attr name="class_dependency_org.openide.util.actions.CallableSystemAction" stringvalue="BuildAction"/>
+    </fileobject>
+    <fileobject name="RunAction.java">
+        <attr name="class_dependency_org.openide.util.actions.CallableSystemAction" stringvalue="RunAction"/>
+    </fileobject>
+    <fileobject name="StartBrowserAction.java">
+        <attr name="class_dependency_org.openide.explorer.ExplorerPanel" stringvalue="StartBrowserAction.StructureViewTab"/>
+        <attr name="class_dependency_org.openide.util.actions.CallableSystemAction" stringvalue="StartBrowserAction"/>
+        <attr name="class_dependency_org.openide.windows.TopComponent" stringvalue="StartBrowserAction.StructureViewComponent"/>
+    </fileobject>
+</attributes>

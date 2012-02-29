@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ramos.aspectjfornetbeansmodule
+OpenIDE-Module-Install: org/aspectj/tools/ajde/netbeans/Installer.class
+OpenIDE-Module-Layer: ramos/aspectjfornetbeansmodule/layer.xml
+OpenIDE-Module-Localizing-Bundle: ramos/aspectjfornetbeansmodule/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 1.9.5.1
+
+

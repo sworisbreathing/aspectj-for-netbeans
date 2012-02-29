@@ -1,0 +1,67 @@
+TOKEN:comment: ("#"[^"\n""\r"]*)
+TOKEN:separator: ( [";" "{" "}" ] )
+TOKEN:number: (["0"-"9"] ["0"-"9" "."]*)
+TOKEN:whitespace: ([" " "\t" "\n" "\r"]+)
+TOKEN:identifier: (
+    ["a"-"z" "A"-"Z"] 
+    [^" " "\t" "\n" "\r" "?" ":" "<" ">" "/" "*" "-" "+" "." "," "=" "{" "}"
+      "(" ")" "[" "]" "!" "@" "#" "$" "%" "^" "&" "~" "|" "\\" ";" 
+    ]*
+)
+TOKEN:operator: (
+    "==" | "!=" | "<=" | ">=" | "?" | ":" | "<" | ">" | "/" | "*" | "-" | 
+    "+" | "." | "," | "=" | "(" | ")" | "[" | "]" | "!" | "@" | "#" | "$" | 
+    "%" | "^" | "&" | "~" | "|" | "\\"
+)
+
+
+TOKEN:keyword: (
+"-injars" |
+"-inpath" |
+"-aspectpath" |
+"-argfile" |
+"-outjar" |
+"-outxml" |
+"-outxmlfile" |
+"-incremental" |
+"-sourceroots" |
+"-crossrefs" |
+"-Xlint" |
+"-Xlintfile" |
+"-classpath" |
+"-bootclasspath" |
+"-extdirs" |
+"-d" |
+"-target" |
+"-1.3" |
+"-1.4" |
+"-1.5" |
+"-1.6" |
+"-source" |
+"-nowarn" |
+"-warn" |
+"-deprecation" |
+"-noImportError" |
+"-proceedOnError" |
+"-g" |
+"-preserveAllLocals" |
+"-referenceInfo" |
+"-encoding" |
+"-verbose" |
+"-log" |
+"-progress" |
+"-time" |
+"-showWeaveInfo"
+)
+
+SKIP: comment
+SKIP: whitespace
+SKIP: number
+SKIP: identifier
+SKIP: keyword
+SKIP: operator
+SKIP: separator
+
+COMMENT_LINE {
+       prefix:"#";
+}

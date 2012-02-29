@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ramos.relationshiptable
+OpenIDE-Module-Layer: ramos/relationshiptable/layer.xml
+OpenIDE-Module-Localizing-Bundle: ramos/relationshiptable/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.3.3
+
+

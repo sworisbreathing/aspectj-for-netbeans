@@ -1,0 +1,19 @@
+# Configuration file for the AspectJ compiler.
+# For the list of available options see: 
+# http://www.eclipse.org/aspectj/doc/next/devguide/ajc-ref.html
+# If a switch option needs arguments, they are given in separates lines like in:
+#
+# -aswitch
+# arg
+
+
+
+# the source roots as directories
+-sourceroots
+.
+
+#support for Java5 annotations
+-1.5
+
+#build incrementally?
+-incremental

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem>
+<filesystem> 
+    <!--
+    <folder name="Loaders">
+        <folder name="text">
+            <folder name="x-lst">
+                <folder name="Actions">
+                    <file name="org.aspectj.tools.ajde.netbeans.configeditor.ConfigEditAction.instance">
+                        <attr name="position" intvalue="100"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    -->
+    <folder name="Actions">
+        <folder name="AspectJ">
+            <!--<file name="org-aspectj-tools-ajde-netbeans-CopySourceFilesToClipboardAction.instance"/>-->
+            <file name="AJBuildAction.instance">
+                <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJBuildAction"/>
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-AJCompileProject.instance"/>
+        </folder>
+        </folder>
+    <folder name="Menu">
+       <!--
+        <folder name="File">
+            <file name="org-aspectj-tools-ajde-netbeans-AJCompile.shadow">
+                <attr name="originalFile" stringvalue="Actions/AspectJ/org-aspectj-tools-ajde-netbeans-AJCompileProject.instance"/>
+                <attr name="position" intvalue="0"/>
+            </file>
+        </folder>
+        -->
+        <folder name="Tools">
+            <folder name="AspectJ">
+                <!--
+                <file name="AJOptionsAction.instance">
+                    <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJOptionsAction"/>
+                </file>
+		-->
+                <file name="AJStartBrowserAction.instance">
+                    <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJStartBrowserAction"/>
+                    <attr name="position" intvalue="50"/>
+                </file>
+                <file name="AJBuildAction.instance">
+                    <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJBuildAction"/>
+                    <attr name="position" intvalue="100"/>
+                </file>
+                <file name="AJSelectConfigurationAction.instance">
+                    <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJSelectConfigurationAction"/>
+                    <attr name="position" intvalue="200"/>
+                </file>
+                
+                
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/aspectj/ajde/resources/actions/startAjde.gif"/>
+                <attr name="position" intvalue="30"/>
+            </folder>
+            <!--<attr boolvalue="true" name="org-netbeans-modules-editor-java-JavaFastOpenAction.instance/AspectJ"/>
+            <attr boolvalue="true" name="AspectJ/Separator1[javax-swing-JSeparator].instance"/>
+            -->
+        </folder>
+        
+        </folder>
+    
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="org-aspectj-tools-ajde-netbeans-options-AspectjfornetbeansmoduleAdvancedOption.instance"/>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="AspectJ">
+            <file name="AJStartBrowserAction.instance">
+                <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJStartBrowserAction"/>
+                <attr name="position" intvalue="100"/>
+            </file>
+            <file name="AJBuildAction.instance">
+                <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJBuildAction"/>
+                <attr name="position" intvalue="200"/>
+            </file>
+            <file name="AJSelectConfigurationAction.instance">
+                <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJSelectConfigurationAction"/>
+                <attr name="position" intvalue="300"/>
+            </file>  
+            <file name="org.aspectj.tools.ajde.netbeans.AJRunAction.instance">
+                <attr name="position" intvalue="400"/>
+            </file>
+            
+            <file name="org.aspectj.tools.ajde.netbeans.AJDebugAction.instance">
+                <attr name="position" intvalue="500"/>
+            </file>
+            
+            <file name="org.aspectj.tools.ajde.netbeans.AJCleanAction.instance">
+                <attr name="position" intvalue="600"/>
+            </file>
+            
+            
+            <!--
+            <file name="AJOptionsAction.instance">
+                <attr name="instanceClass" stringvalue="org.aspectj.tools.ajde.netbeans.AJOptionsAction"/>
+            </file>    
+            -->
+            <!--
+            <attr boolvalue="true" name="AJStartBrowserAction.instance/AJBuildAction.instance"/>
+            <attr boolvalue="true" name="AJBuildAction.instance/AJSelectConfigurationAction.instance"/>
+            -->
+            <!--
+            <attr boolvalue="true" name="AJSelectConfigurationAction.instance/AJOptionsAction.instance"/>
+            -->
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="O-F11.shadow">
+            <attr name="originalFile" stringvalue="Actions/AspectJ/AJBuildAction.instance"/>
+        </file>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="aspectjfornetbeansmodule-helpset.xml" url="aspectjfornetbeansmodule-helpset.xml"/>
+        </folder>
+        <!--  <file name="org-aspectj-tools-ajde-netbeans-AjdeModule.settings" url="AjdeModule.settings">
+            <attr name="SystemFileSystem.icon" urlvalue="nbres:/org/aspectj/ajde/resources/actions/startAjde.gif"/> 
+            <attr name="SystemFileSystem.layer" stringvalue="project"/> 
+        </file>
+        -->
+    </folder>
+    <folder name="Editors">
+        <folder name="AnnotationTypes">
+            <file name="org-aspectj-tools-ajde-netbeans-aspectjannotation.xml" url="annotations/AspectJAnnotation.xml">
+            </file>
+            
+            <file name="org-aspectj-tools-ajde-netbeans-adviceannotation.xml" url="annotations/AdviceAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-advicetargetannotation.xml" url="annotations/AdviceTargetAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-aroundadviserannotation.xml" url="annotations/AroundAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-afteradviserannotation.xml" url="annotations/AfterAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-beforeadviserannotation.xml" url="annotations/BeforeAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-advisedbyafterannotation.xml" url="annotations/AdvisedByAfterAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-advisedbyaroundannotation.xml" url="annotations/AdvisedByAroundAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-advisedbybeforeannotation.xml" url="annotations/AdvisedByBeforeAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-source_and_target.xml" url="annotations/SourceAndTargetAnnotation.xml">
+            </file>
+            
+            
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_adviceannotation.xml" url="annotations/DynamicAdviceAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_advicetargetannotation.xml" url="annotations/DynamicAdviceTargetAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_aroundadviserannotation.xml" url="annotations/DynamicAroundAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_afteradviserannotation.xml" url="annotations/DynamicAfterAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_beforeadviserannotation.xml" url="annotations/DynamicBeforeAdviserAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_advisedbyafterannotation.xml" url="annotations/DynamicAdvisedByAfterAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_advisedbyaroundannotation.xml" url="annotations/DynamicAdvisedByAroundAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_advisedbybeforeannotation.xml" url="annotations/DynamicAdvisedByBeforeAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-dynamic_source_and_target.xml" url="annotations/DynamicSourceAndTargetAnnotation.xml">
+            </file>
+            
+            
+            <file name="org-aspectj-tools-ajde-netbeans-introductiontarget.xml" url="annotations/IntroductionTargetAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-introductionsource.xml" url="annotations/IntroductionSourceAnnotation.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-annotations-declare_warning_target.xml" url="annotations/DeclareWarningTarget.xml">
+            </file>
+            <file name="org-aspectj-tools-ajde-netbeans-annotations-declare_error_target.xml" url="annotations/DeclareErrorTarget.xml">
+            </file>
+            
+            <file name="org-aspectj-tools-ajde-netbeans-annotations-declare_error_source.xml" url="annotations/DeclareErrorSource.xml">
+            </file>
+            
+            <file name="org-aspectj-tools-ajde-netbeans-annotations-declare_warning_source.xml" url="annotations/DeclareWarningSource.xml">
+            </file>
+            
+            
+            <folder name="AspectJAnnotationsTypesActions">
+                <file name="org.aspectj.tools.ajde.netbeans.annotations.actions.AspectJAnnotationAction.instance"/>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="AspectJ">
+        <file name="saved_model"/>
+    </folder>
+    
+   
+    <folder name="Projects">
+        <folder name="Actions">
+        <file name="org-aspectj-tools-ajde-netbeans-NbProjectAction.instance"/>
+        </folder>
+    </folder>
+    
+</filesystem>

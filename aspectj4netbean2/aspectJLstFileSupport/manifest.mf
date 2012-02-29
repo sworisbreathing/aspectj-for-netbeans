@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ramos.aspectjlstfilesupport
+OpenIDE-Module-Layer: ramos/aspectjlstfilesupport/layer.xml
+OpenIDE-Module-Localizing-Bundle: ramos/aspectjlstfilesupport/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.3.1
+
+Name: ramos/aspectjlstfilesupport/LstDataLoader.class
+OpenIDE-Module-Class: Loader
+

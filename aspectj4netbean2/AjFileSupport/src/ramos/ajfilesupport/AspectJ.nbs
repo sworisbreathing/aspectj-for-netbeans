@@ -1,0 +1,214 @@
+########### tokens #############################################################
+
+TOKEN:comment:("/*"):<IN_COMMENT>
+
+<IN_COMMENT> {
+
+    TOKEN:comment_keyword: (
+	"@author" |
+	"@code" |
+	"@docRoot" |
+	"@deprecated" |
+	"@exception" |
+	"@inheritDoc" |
+	"@link" |
+	"@linkplain" |
+	"@literal" |
+	"@param" |
+	"@return" |
+	"@see" |
+	"@serial" |
+	"@serialData" |
+	"@serialField" |
+	"@since" |
+	"@throws" |
+	"@value" |
+	"@version"
+    )
+	
+    TOKEN:comment: ([^"@""*"]+)
+    TOKEN:comment: ("*"[^"/"])
+    TOKEN:comment: ("*/"):<DEFAULT>
+}
+#TOKEN:block_comment: ( "/*" - "*/" )
+TOKEN:line_comment: ("//"[^"\n""\r"]*)
+TOKEN:keyword: (
+"aspect" |
+"after" |
+"around" |
+"before" |
+"pointcut" |
+"call" |
+"execution" |
+"returning" |
+"privileged" |
+
+"pertarget" |
+"perthis" |
+"percflow" |
+"percflowbelow" |
+"pertypewithin" |
+"issingleton" |
+"throwing" |
+"proceed" |
+
+"thisJoinPoint" |
+"thisJoinPointStaticPart" |
+"thisEnclosingJoinPointStaticPart" |
+"declare" |
+"parents" |
+"warning" |
+"error" |
+"soft" |
+"precedence" |
+"@type" |
+"@method" |
+"@constructor" |
+"@field" |
+"initialization" |
+"preinitialization" |
+"staticinitialization" |
+"get" |
+"set" |
+"handler" |
+"adviceexecution" |
+"within" |
+"withincode" |
+"cflow" |
+"cflowbelow" |
+"target" |
+"args" |
+"@this" |
+"@target" |
+"@args" |
+"@within" |
+"@annotation" |
+
+
+
+
+
+
+
+
+    "abstract" |
+    "assert" |
+    "boolean" |
+    "break" |
+    "byte" |
+    "case" |
+    "catch" |
+    "char" |
+    "class" |
+    "const" |
+    "continue" |
+    "default" |
+    "do" |
+    "double" |
+    "else" |
+    "enum" |
+    "extends" |
+    "false" |
+    "final" |
+    "finally" |
+    "float" |
+    "for" |
+    "goto" |
+    "if" |
+    "implements" |
+    "import" |
+    "instanceof" |
+    "int" |
+    "interface" |
+    "long" |
+    "native" |
+    "new" |
+    "null" |
+    "package" |
+    "private" |
+    "protected" |
+    "public" |
+    "return" |
+    "short" |
+    "static" |
+    "strictfp" |
+    "super" |
+    "switch" |
+    "synchronized" |
+    "this" |
+    "throw" |
+    "throws" |
+    "transient" |
+    "true" |
+    "try" |
+    "void" |
+    "volatile" |
+    "while"
+)
+
+TOKEN:operator: (
+    "==" | "!=" | "<=" | ">=" | "?" | ":" | "<" | ">" | "/" | "*" | "-" | 
+    "+" | "." | "," | "=" | "(" | ")" | "[" | "]" | "!" | "@" | "#" | "$" | 
+    "%" | "^" | "&" | "~" | "|" | "\\"
+)
+
+TOKEN:separator: ( [";" "{" "}"] )
+
+TOKEN:string: (
+    "\""
+        ( [^ "\"" "\n" "\r"] |
+          ("\\" ["r" "n" "t" "\\" "\'" "\""])
+        )*
+    "\""
+)
+
+TOKEN:char: (
+    "\'"
+	( [^"\'" "\n" "\r"] |
+	  ("\\" ["r" "n" "t" "\\" "\'" "\""])
+	)
+    "\'"
+)
+
+TOKEN:number: (["0"-"9"] ["0"-"9" "."]*)
+
+TOKEN:whitespace: ([" " "\t" "\n" "\r"]+)
+
+TOKEN:identifier: (
+    ["a"-"z" "A"-"Z"] 
+    [^" " "\t" "\n" "\r" "?" ":" "<" ">" "/" "*" "-" "+" "." "," "=" "{" "}"
+      "(" ")" "[" "]" "!" "@" "#" "$" "%" "^" "&" "~" "|" "\\" ";" 
+    ]*
+)
+
+SKIP:whitespace
+SKIP:comment
+SKIP:line_comment
+SKIP:comment_keyword
+
+########### colors #############################################################
+#COLOR:block_comment: {
+ #   default_coloring:"comment";
+#}
+########### code folding #######################################################
+
+#FOLD:block_comment: {
+#}
+########### navigator ##########################################################
+
+########### complete and indentation ###########################################
+COMPLETE "(:)"
+COMPLETE "{:}"
+COMPLETE "[:]"
+COMPLETE "\":\""
+COMPLETE "':'"
+
+INDENT "(:)"
+INDENT "{:}"
+INDENT "[:]"
+ 
+INDENT "\\s*(((if|while)\\s*\\(|else\\s*|else\\s+if\\s*\\(|for\\s*\\(.*\\))[^{;]*)"
+
+COMMENT_LINE {
+     prefix:"//";
+  }
