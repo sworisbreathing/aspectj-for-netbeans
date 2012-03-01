@@ -1,0 +1,9 @@
+This project is a fork of Ramon Ramos' AspectJ Plug-In Module for NetBeans 6.0+
+http://www.jroller.com/ramlog/entry/using_the_aspectj_plug_in1
+
+with pjiricka's patches to update to 6.7.1
+http://plugins.netbeans.org/plugin/22964/aspectj-plugin-for-netbeans-6-7-x
+
+and my own patches to update to 7.1 (no link, sorry)
+
+-sworisbreathing, 2012-02-29
